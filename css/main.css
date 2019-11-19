@@ -11,8 +11,48 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
   font: normal 100%/1.3 sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+body {
+  margin:0;
+}
+
+section {
+  background-color: #e5c30a;
+}
+
+.section-letter {
+  width: 50%;
+  padding-top: 1.3rem;
+  padding-left: 1.3rem;
+}
+
+.section-icon {
+  width: 50%;
+  padding-top: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+.image-flex {
+  width: 100%;
+  display: flex;
+}
+
+.section-body {
+  padding: 1rem;
+}
+
+.section-body h2 {
+  margin:0;
+
+}
+
+.section-body p {
+  margin: 0;
+
 }
