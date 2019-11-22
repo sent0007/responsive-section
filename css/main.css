@@ -11,7 +11,7 @@ html {
   text-size-adjust: 100%;
   box-sizing: border-box;
   font: normal 100%/1.3 sans-serif;
-  font-family: "Noto Sans", sans-serif;
+  /*font-family: "Noto Sans", sans-serif;*/
 }
 
 *, *::before, *::after {
@@ -26,33 +26,112 @@ section {
   background-color: #e5c30a;
 }
 
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 .section-letter {
-  width: 50%;
+  width: 100%;
   padding-top: 1.3rem;
   padding-left: 1.3rem;
 }
 
 .section-icon {
-  width: 50%;
+  width: 100%;
   padding-top: 1.3rem;
   padding-right: 1.3rem;
 }
 
-.image-flex {
-  width: 100%;
-  display: flex;
+.img-flex {
+  width: 50%;
 }
 
 .section-body {
-  padding: 1rem;
+  padding: 0 1.3rem 1.3rem;
 }
 
 .section-body h2 {
-  margin:0;
-
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 .section-body p {
   margin: 0;
+}
+
+@media only screen and (min-width: 25em) {
+
+  html {
+    font-size: 100%;
+    line-height: 1.3;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.3rem;
+  }
+
+  .section-icon {
+    width: 80%;
+  }
+
+  .section-letter {
+    width: 80%
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.4rem;
+  }
+
+  .img-flex {
+    width: 50%;
+  }
+
+  .wrapper {
+    flex-wrap: nowrap;
+  }
+
+  .section-body {
+  order: 1;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  h1,
+  p {
+    margin: 0 0 1.5rem;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+
+  .wrapper {
+    max-width: 45em;
+    margin: 0 auto;
+
 
 }
